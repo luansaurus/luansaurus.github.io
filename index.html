@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfólio · Desenvolvedor Full Stack</title>
+<meta name="description" content="Portfólio com três aplicações web completas: PokéData, BlitzPicks e ArenaPicks. Next.js, React, TypeScript e Supabase.">
+<meta name="theme-color" content="#0d0f14">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <a class="brand" href="#top" data-bind="name-short">SN</a>
+  <nav>
+    <a href="#projetos">Projetos</a>
+    <a href="#stack">Stack</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato" class="btn-sm">Contato</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="eyebrow mono">Desenvolvedor Full Stack</p>
+    <h1>Eu construo <em>produtos web</em> completos, do banco de dados à interface.</h1>
+    <p class="lead">Três aplicações completas, com autenticação, dados em tempo real, regras de negócio e painel administrativo. Next.js, React, TypeScript e Supabase.</p>
+    <div class="hero-actions">
+      <a class="btn" href="#projetos">Ver projetos</a>
+      <a class="btn ghost" href="#contato">Falar comigo</a>
+    </div>
+    <dl class="numbers">
+      <div><dt>3</dt><dd>aplicações completas</dd></div>
+      <div><dt>~42 mil</dt><dd>linhas de TypeScript</dd></div>
+      <div><dt>3</dt><dd>APIs externas integradas</dd></div>
+    </dl>
+  </section>
+
+  <section id="projetos" class="section">
+    <div class="section-head">
+      <p class="eyebrow mono">01 · Projetos</p>
+      <h2>O que eu já construí</h2>
+    </div>
+
+    <!-- ============ POKEDATA ============ -->
+    <article class="project" style="--accent:#22d3ee; --accent-ink:#04252b" id="pokedata">
+      <div class="shot shot-poke" aria-hidden="true">
+        <div class="win">
+          <div class="win-bar"><i></i><i></i><i></i><span class="mono">team-builder</span></div>
+          <div class="poke-grid">
+            <div class="slot"><b>HP</b><span style="--w:78%"></span></div>
+            <div class="slot"><b>ATK</b><span style="--w:92%"></span></div>
+            <div class="slot"><b>DEF</b><span style="--w:55%"></span></div>
+            <div class="slot"><b>SPA</b><span style="--w:66%"></span></div>
+            <div class="slot"><b>SPD</b><span style="--w:60%"></span></div>
+            <div class="slot"><b>SPE</b><span style="--w:84%"></span></div>
+          </div>
+          <div class="chips"><em>Fogo</em><em>Água</em><em>Planta</em><em>Elétrico</em><em>Gelo</em><em>Lutador</em></div>
+        </div>
+      </div>
+      <div class="info">
+        <p class="tag mono">Projeto 01 · Ferramenta para jogadores</p>
+        <h3>PokéData</h3>
+        <p class="pitch">Central de dados para jogadores de Pokémon: monte times, acompanhe sua jornada em cada jogo e organize seus boxes.</p>
+        <ul class="feats">
+          <li><strong>Team Builder</strong> com cálculo de stats finais (EVs, IVs e natureza), análise de defesa e ataque por tipo, recomendações e sorteio de times.</li>
+          <li><strong>Playthrough</strong> por jogo: ginásios, rotas, itens, exclusivos e times dos treinadores.</li>
+          <li><strong>Home Organizer</strong> que distribui a coleção em boxes de 30, com filtros de shiny, formas e gênero.</li>
+          <li>Roster do <strong>Champions</strong>, enciclopédia de golpes, habilidades e itens, perfil de usuário e painel admin.</li>
+        </ul>
+        <div class="deep">
+          <p class="mono label">Destaque técnico</p>
+          <p>Scripts em Node que raspam a Bulbapedia (cheerio) e sincronizam encontros por rota no Supabase, com mapa de jogos, classificação de locais e tratamento de nomes não mapeados.</p>
+        </div>
+        <ul class="stack mono"><li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>Supabase</li><li>PokéAPI</li><li>Cheerio</li><li>Tailwind</li></ul>
+        <div class="links">
+          <a class="btn" data-link="pokedata-live" href="#" target="_blank" rel="noopener">Ver online ↗</a>
+          <a class="btn ghost" data-link="pokedata-repo" href="#" target="_blank" rel="noopener">Código no GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ============ BLITZPICKS ============ -->
+    <article class="project flip" style="--accent:#ef4444; --accent-ink:#2a0707" id="blitzpicks">
+      <div class="shot shot-blitz" aria-hidden="true">
+        <div class="win">
+          <div class="win-bar"><i></i><i></i><i></i><span class="mono">week 9 · picks</span></div>
+          <div class="game">
+            <div class="tm"><b>KC</b><span>24</span></div>
+            <div class="vs mono">FINAL</div>
+            <div class="tm"><b>BUF</b><span>21</span></div>
+            <div class="pick g">+7</div>
+          </div>
+          <div class="game">
+            <div class="tm"><b>PHI</b><span>17</span></div>
+            <div class="vs mono">3Q · 04:12</div>
+            <div class="tm"><b>DAL</b><span>10</span></div>
+            <div class="pick b">+5</div>
+          </div>
+          <div class="game">
+            <div class="tm"><b>SF</b><span>13</span></div>
+            <div class="vs mono">FINAL</div>
+            <div class="tm"><b>SEA</b><span>20</span></div>
+            <div class="pick r">0</div>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <p class="tag mono">Projeto 02 · Pick'em da NFL</p>
+        <h3>BlitzPicks</h3>
+        <p class="pitch">Bolão da NFL com placar em tempo real, ligas entre amigos, ranking e chaveamento dos playoffs.</p>
+        <ul class="feats">
+          <li><strong>Palpites de placar</strong> com pontuação por exato, saldo e vencedor. Pontos mudam de cor conforme o acerto, inclusive durante o jogo.</li>
+          <li><strong>Ligas privadas</strong> com limites por plano (comum e VIP) e ranking próprio.</li>
+          <li><strong>Spy Locker Room:</strong> palpites ficam travados antes do kickoff e só são revelados aos outros minutos antes do jogo.</li>
+          <li><strong>Playoffs:</strong> semeadura calculada com dados da ESPN, chaveamento ao vivo e histórico de temporadas.</li>
+          <li>Tema visual que se adapta ao time favorito, exportação de imagem e central de ajuda.</li>
+        </ul>
+        <div class="deep">
+          <p class="mono label">Destaque técnico</p>
+          <p>Rotas protegidas por chave de cron sincronizam jogos, placares e estatísticas da API da ESPN, e recalculam classificação (desempates por divisão e conferência) e ranking de usuários no servidor.</p>
+        </div>
+        <ul class="stack mono"><li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>Supabase Auth + DB</li><li>API da ESPN</li><li>Tailwind</li><li>html-to-image</li></ul>
+        <div class="links">
+          <a class="btn" data-link="blitzpicks-live" href="#" target="_blank" rel="noopener">Ver online ↗</a>
+          <a class="btn ghost" data-link="blitzpicks-repo" href="#" target="_blank" rel="noopener">Código no GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ============ ARENAPICKS ============ -->
+    <article class="project" style="--accent:#3b82f6; --accent-ink:#06142b" id="arenapicks">
+      <div class="shot shot-arena" aria-hidden="true">
+        <div class="win">
+          <div class="win-bar"><i></i><i></i><i></i><span class="mono">ranking</span></div>
+          <ol class="rank">
+            <li><span>1</span><b>Ana</b><em>86 pts</em></li>
+            <li><span>2</span><b>Bruno</b><em>81 pts</em></li>
+            <li><span>3</span><b>Carla</b><em>77 pts</em></li>
+            <li class="me"><span>4</span><b>Você</b><em>70 pts</em></li>
+            <li><span>5</span><b>Diego</b><em>64 pts</em></li>
+          </ol>
+          <div class="legend mono"><i class="g"></i>exato <i class="bl"></i>saldo <i class="y"></i>vencedor</div>
+        </div>
+      </div>
+      <div class="info">
+        <p class="tag mono">Projeto 03 · Bolão multicampeonato</p>
+        <h3>ArenaPicks</h3>
+        <p class="pitch">Plataforma de bolão pensada para a Copa do Mundo, mas construída para rodar qualquer campeonato.</p>
+        <ul class="feats">
+          <li><strong>Várias competições</strong> na mesma plataforma, com histórico das anteriores e seletor de campeonato.</li>
+          <li><strong>Motor de pontuação configurável:</strong> placar exato, saldo, vencedor, bônus de pênaltis e multiplicador para o mata-mata.</li>
+          <li><strong>Ligas e ranking</strong>, comparação de palpites entre usuários, modo espião e análise de desempenho individual.</li>
+          <li><strong>Portal administrativo</strong> para jogos, placares, times, usuários, regras e estatísticas.</li>
+        </ul>
+        <div class="deep">
+          <p class="mono label">Destaque técnico</p>
+          <p>Sincronização automática de resultados via API-Football, com normalização de nomes de seleções para o português e consulta apenas das datas com jogos ativos, para poupar chamadas da API.</p>
+        </div>
+        <ul class="stack mono"><li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>Supabase</li><li>API-Football</li><li>Tailwind</li></ul>
+        <div class="links">
+          <a class="btn" data-link="arenapicks-live" href="#" target="_blank" rel="noopener">Ver online ↗</a>
+          <a class="btn ghost" data-link="arenapicks-repo" href="#" target="_blank" rel="noopener">Código no GitHub</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="stack" class="section">
+    <div class="section-head">
+      <p class="eyebrow mono">02 · Stack</p>
+      <h2>O que aparece nos três projetos</h2>
+    </div>
+    <div class="cols">
+      <div class="col"><h4>Front-end</h4><p>Next.js (App Router), React 19, TypeScript, Tailwind CSS, Lucide, interfaces responsivas com temas dinâmicos.</p></div>
+      <div class="col"><h4>Back-end e dados</h4><p>Supabase (Postgres, autenticação, relacionamentos), rotas de API no Next, rotinas de recálculo e sincronização agendadas.</p></div>
+      <div class="col"><h4>Integrações</h4><p>ESPN, API-Football, PokéAPI e Bulbapedia (scraping), tratando dados inconsistentes e nomes divergentes.</p></div>
+      <div class="col"><h4>Produto</h4><p>Regras de negócio configuráveis, permissões, painéis de administração, ranking e fluxos de ligas entre usuários.</p></div>
+    </div>
+  </section>
+
+  <section id="sobre" class="section about">
+    <div class="section-head">
+      <p class="eyebrow mono">03 · Sobre</p>
+      <h2>Quem está por trás</h2>
+    </div>
+    <p data-bind="about">Sou desenvolvedor e gosto de transformar hobbies em produtos de verdade. Meus projetos nasceram de problemas que eu mesmo tinha: acompanhar meus jogos, organizar bolões com amigos e ter regras claras de pontuação. Cuido de tudo, do modelo de dados à interface, e busco código organizado e telas agradáveis de usar.</p>
+  </section>
+
+  <section id="contato" class="section contact">
+    <p class="eyebrow mono">04 · Contato</p>
+    <h2>Vamos conversar?</h2>
+    <p class="lead">Aberto a oportunidades, freelas e conversas sobre projetos.</p>
+    <div class="hero-actions">
+      <a class="btn" data-link="email" href="#">Enviar e-mail</a>
+      <a class="btn ghost" data-link="github" href="#" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn ghost" data-link="linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>© <span id="year"></span> <span data-bind="name">Seu Nome</span></span>
+  <a href="#top">Voltar ao topo ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
