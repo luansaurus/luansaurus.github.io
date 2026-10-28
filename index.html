@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-lang="pt">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Portfólio · Desenvolvedor Full Stack</title>
-<meta name="description" content="Portfólio com três aplicações web completas: PokéData, BlitzPicks e ArenaPicks. Next.js, React, TypeScript e Supabase.">
+<title>Luan Fonseca Barros</title>
+<meta name="description" content="Banco de dados e aplicações web. Quatro aplicações no ar com Next.js, React, TypeScript e Supabase, mais mais de 10 anos de TI com SQL Server e PostgreSQL. / Databases and web applications: four live apps built with Next.js, React, TypeScript and Supabase, plus 10+ years of IT with SQL Server and PostgreSQL.">
 <meta name="theme-color" content="#0d0f14">
+<script>try{var l=localStorage.getItem("lfb-lang");if(l!=="pt"&&l!=="en"){l=((navigator.language||"pt").toLowerCase().indexOf("pt")===0)?"pt":"en"}document.documentElement.setAttribute("data-lang",l);document.documentElement.setAttribute("lang",l==="pt"?"pt-BR":"en")}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
@@ -14,77 +15,47 @@
 <body>
 
 <header class="nav" id="top">
-  <a class="brand" href="#top" data-bind="name-short">SN</a>
+  <a class="brand" href="#top">LFB</a>
   <nav>
-    <a href="#projetos">Projetos</a>
+    <a href="#projetos"><span class="pt">Projetos</span><span class="en">Projects</span></a>
+    <a href="#servicos"><span class="pt">Serviços</span><span class="en">Services</span></a>
     <a href="#stack">Stack</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#contato" class="btn-sm">Contato</a>
+    <a href="#sobre"><span class="pt">Sobre</span><span class="en">About</span></a>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" id="b-pt" data-set="pt" aria-pressed="true">PT</button>
+      <button type="button" id="b-en" data-set="en" aria-pressed="false">EN</button>
+    </div>
+    <a href="#contato" class="btn-sm"><span class="pt">Contato</span><span class="en">Contact</span></a>
   </nav>
 </header>
 
 <main>
   <section class="hero">
-    <p class="eyebrow mono">Desenvolvedor Full Stack</p>
-    <h1>Eu construo <em>produtos web</em> completos, do banco de dados à interface.</h1>
-    <p class="lead">Três aplicações completas, com autenticação, dados em tempo real, regras de negócio e painel administrativo. Next.js, React, TypeScript e Supabase.</p>
+    <p class="eyebrow mono"><span class="pt">Analista de Sistemas · Banco de dados · Full Stack</span><span class="en">Systems Analyst · Databases · Full Stack</span></p>
+    <h1><span class="pt">Eu construo <em>produtos web</em> completos, do banco de dados à interface.</span><span class="en">I build complete <em>web products</em>, from the database to the interface.</span></h1>
+    <p class="lead">
+      <span class="pt">Mais de 10 anos em TI, com SQL Server, PostgreSQL e integração de dados no dia a dia. Fora do expediente, quatro aplicações completas no ar com Next.js, React, TypeScript e Supabase.</span>
+      <span class="en">Over 10 years in IT, working daily with SQL Server, PostgreSQL and data integration. Outside work hours, four complete applications live with Next.js, React, TypeScript and Supabase.</span>
+    </p>
     <div class="hero-actions">
-      <a class="btn" href="#projetos">Ver projetos</a>
-      <a class="btn ghost" href="#contato">Falar comigo</a>
+      <a class="btn" href="#projetos"><span class="pt">Ver projetos</span><span class="en">See projects</span></a>
+      <a class="btn ghost" href="#contato"><span class="pt">Falar comigo</span><span class="en">Get in touch</span></a>
     </div>
     <dl class="numbers">
-      <div><dt>3</dt><dd>aplicações completas</dd></div>
-      <div><dt>~42 mil</dt><dd>linhas de TypeScript</dd></div>
-      <div><dt>3</dt><dd>APIs externas integradas</dd></div>
+      <div><dt>4</dt><dd><span class="pt">aplicações no ar</span><span class="en">live applications</span></dd></div>
+      <div><dt>10+</dt><dd><span class="pt">anos em TI</span><span class="en">years in IT</span></dd></div>
+      <div><dt>3</dt><dd><span class="pt">APIs externas integradas</span><span class="en">external APIs integrated</span></dd></div>
     </dl>
   </section>
 
   <section id="projetos" class="section">
     <div class="section-head">
-      <p class="eyebrow mono">01 · Projetos</p>
-      <h2>O que eu já construí</h2>
+      <p class="eyebrow mono">01 · <span class="pt">Projetos</span><span class="en">Projects</span></p>
+      <h2><span class="pt">O que eu já construí</span><span class="en">What I have built</span></h2>
     </div>
 
-    <!-- ============ POKEDATA ============ -->
-    <article class="project" style="--accent:#22d3ee; --accent-ink:#04252b" id="pokedata">
-      <div class="shot shot-poke" aria-hidden="true">
-        <div class="win">
-          <div class="win-bar"><i></i><i></i><i></i><span class="mono">team-builder</span></div>
-          <div class="poke-grid">
-            <div class="slot"><b>HP</b><span style="--w:78%"></span></div>
-            <div class="slot"><b>ATK</b><span style="--w:92%"></span></div>
-            <div class="slot"><b>DEF</b><span style="--w:55%"></span></div>
-            <div class="slot"><b>SPA</b><span style="--w:66%"></span></div>
-            <div class="slot"><b>SPD</b><span style="--w:60%"></span></div>
-            <div class="slot"><b>SPE</b><span style="--w:84%"></span></div>
-          </div>
-          <div class="chips"><em>Fogo</em><em>Água</em><em>Planta</em><em>Elétrico</em><em>Gelo</em><em>Lutador</em></div>
-        </div>
-      </div>
-      <div class="info">
-        <p class="tag mono">Projeto 01 · Ferramenta para jogadores</p>
-        <h3>PokéData</h3>
-        <p class="pitch">Central de dados para jogadores de Pokémon: monte times, acompanhe sua jornada em cada jogo e organize seus boxes.</p>
-        <ul class="feats">
-          <li><strong>Team Builder</strong> com cálculo de stats finais (EVs, IVs e natureza), análise de defesa e ataque por tipo, recomendações e sorteio de times.</li>
-          <li><strong>Playthrough</strong> por jogo: ginásios, rotas, itens, exclusivos e times dos treinadores.</li>
-          <li><strong>Home Organizer</strong> que distribui a coleção em boxes de 30, com filtros de shiny, formas e gênero.</li>
-          <li>Roster do <strong>Champions</strong>, enciclopédia de golpes, habilidades e itens, perfil de usuário e painel admin.</li>
-        </ul>
-        <div class="deep">
-          <p class="mono label">Destaque técnico</p>
-          <p>Scripts em Node que raspam a Bulbapedia (cheerio) e sincronizam encontros por rota no Supabase, com mapa de jogos, classificação de locais e tratamento de nomes não mapeados.</p>
-        </div>
-        <ul class="stack mono"><li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>Supabase</li><li>PokéAPI</li><li>Cheerio</li><li>Tailwind</li></ul>
-        <div class="links">
-          <a class="btn" data-link="pokedata-live" href="#" target="_blank" rel="noopener">Ver online ↗</a>
-          <a class="btn ghost" data-link="pokedata-repo" href="#" target="_blank" rel="noopener">Código no GitHub</a>
-        </div>
-      </div>
-    </article>
-
     <!-- ============ BLITZPICKS ============ -->
-    <article class="project flip" style="--accent:#ef4444; --accent-ink:#2a0707" id="blitzpicks">
+    <article class="project" style="--accent:#ef4444; --accent-ink:#2a0707" id="blitzpicks">
       <div class="shot shot-blitz" aria-hidden="true">
         <div class="win">
           <div class="win-bar"><i></i><i></i><i></i><span class="mono">week 9 · picks</span></div>
@@ -109,30 +80,27 @@
         </div>
       </div>
       <div class="info">
-        <p class="tag mono">Projeto 02 · Pick'em da NFL</p>
+        <p class="tag mono"><span class="pt">Projeto 01 · Pick'em da NFL</span><span class="en">Project 01 · NFL pick'em</span></p>
+        <p class="status mono"><span class="pt">Em uso · 5 usuários ativos</span><span class="en">In use · 5 active users</span></p>
         <h3>BlitzPicks</h3>
-        <p class="pitch">Bolão da NFL com placar em tempo real, ligas entre amigos, ranking e chaveamento dos playoffs.</p>
+        <p class="pitch"><span class="pt">Bolão da NFL com placar em tempo real, ligas entre amigos, ranking e chaveamento dos playoffs. Pronto para as próximas temporadas, com interface em inglês.</span><span class="en">NFL pick'em with live scores, leagues between friends, rankings and a playoff bracket. Ready for upcoming seasons.</span></p>
         <ul class="feats">
-          <li><strong>Palpites de placar</strong> com pontuação por exato, saldo e vencedor. Pontos mudam de cor conforme o acerto, inclusive durante o jogo.</li>
-          <li><strong>Ligas privadas</strong> com limites por plano (comum e VIP) e ranking próprio.</li>
-          <li><strong>Spy Locker Room:</strong> palpites ficam travados antes do kickoff e só são revelados aos outros minutos antes do jogo.</li>
-          <li><strong>Playoffs:</strong> semeadura calculada com dados da ESPN, chaveamento ao vivo e histórico de temporadas.</li>
-          <li>Tema visual que se adapta ao time favorito, exportação de imagem e central de ajuda.</li>
+          <li><span class="pt"><strong>Palpites de placar</strong> com pontuação por exato, saldo e vencedor. Pontos mudam de cor conforme o acerto, inclusive durante o jogo.</span><span class="en"><strong>Score picks</strong> with points for exact score, margin and winner. Points change color by accuracy, even during the game.</span></li>
+          <li><span class="pt"><strong>Ligas privadas</strong> com limites por plano (comum e VIP) e ranking próprio.</span><span class="en"><strong>Private leagues</strong> with plan-based limits (standard and VIP) and their own ranking.</span></li>
+          <li><span class="pt"><strong>Spy Locker Room:</strong> palpites ficam travados antes do kickoff e só são revelados aos outros minutos antes do jogo.</span><span class="en"><strong>Spy Locker Room:</strong> picks are locked before kickoff and only revealed to others minutes before the game.</span></li>
+          <li><span class="pt"><strong>Playoffs:</strong> semeadura calculada com dados da ESPN, chaveamento ao vivo e histórico de temporadas.</span><span class="en"><strong>Playoffs:</strong> seeding computed from ESPN data, a live bracket and season history.</span></li>
+          <li><span class="pt">Tema visual que se adapta ao time favorito, estatísticas dos jogadores da liga, exportação de imagem e central de ajuda.</span><span class="en">A visual theme that adapts to your favorite team, league player stats, image export and a help center.</span></li>
         </ul>
         <div class="deep">
-          <p class="mono label">Destaque técnico</p>
-          <p>Rotas protegidas por chave de cron sincronizam jogos, placares e estatísticas da API da ESPN, e recalculam classificação (desempates por divisão e conferência) e ranking de usuários no servidor.</p>
+          <p class="mono label"><span class="pt">Destaque técnico</span><span class="en">Technical highlight</span></p>
+          <p><span class="pt">Rotas protegidas por chave de cron sincronizam jogos, placares e estatísticas da API da ESPN, e recalculam classificação (desempates por divisão e conferência) e ranking de usuários no servidor.</span><span class="en">Cron-key-protected routes sync games, scores and stats from the ESPN API, and recompute standings (division and conference tiebreakers) and user rankings on the server.</span></p>
         </div>
-        <ul class="stack mono"><li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>Supabase Auth + DB</li><li>API da ESPN</li><li>Tailwind</li><li>html-to-image</li></ul>
-        <div class="links">
-          <a class="btn" data-link="blitzpicks-live" href="#" target="_blank" rel="noopener">Ver online ↗</a>
-          <a class="btn ghost" data-link="blitzpicks-repo" href="#" target="_blank" rel="noopener">Código no GitHub</a>
-        </div>
+        <ul class="stack mono"><li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>Supabase Auth + DB</li><li>ESPN API</li><li>Tailwind</li><li>html-to-image</li></ul>
       </div>
     </article>
 
     <!-- ============ ARENAPICKS ============ -->
-    <article class="project" style="--accent:#3b82f6; --accent-ink:#06142b" id="arenapicks">
+    <article class="project flip" style="--accent:#3b82f6; --accent-ink:#06142b" id="arenapicks">
       <div class="shot shot-arena" aria-hidden="true">
         <div class="win">
           <div class="win-bar"><i></i><i></i><i></i><span class="mono">ranking</span></div>
@@ -140,71 +108,176 @@
             <li><span>1</span><b>Ana</b><em>86 pts</em></li>
             <li><span>2</span><b>Bruno</b><em>81 pts</em></li>
             <li><span>3</span><b>Carla</b><em>77 pts</em></li>
-            <li class="me"><span>4</span><b>Você</b><em>70 pts</em></li>
+            <li class="me"><span>4</span><b><span class="pt">Você</span><span class="en">You</span></b><em>70 pts</em></li>
             <li><span>5</span><b>Diego</b><em>64 pts</em></li>
           </ol>
-          <div class="legend mono"><i class="g"></i>exato <i class="bl"></i>saldo <i class="y"></i>vencedor</div>
+          <div class="legend mono"><i class="g"></i><span class="pt">exato</span><span class="en">exact</span> <i class="bl"></i><span class="pt">saldo</span><span class="en">margin</span> <i class="y"></i><span class="pt">vencedor</span><span class="en">winner</span></div>
         </div>
       </div>
       <div class="info">
-        <p class="tag mono">Projeto 03 · Bolão multicampeonato</p>
+        <p class="tag mono"><span class="pt">Projeto 02 · Bolão multicampeonato</span><span class="en">Project 02 · Multi-competition pick'em</span></p>
+        <p class="status mono"><span class="pt">No ar · 11 participantes na última competição</span><span class="en">Live · 11 participants in the last competition</span></p>
         <h3>ArenaPicks</h3>
-        <p class="pitch">Plataforma de bolão pensada para a Copa do Mundo, mas construída para rodar qualquer campeonato.</p>
+        <p class="pitch"><span class="pt">Plataforma de bolão pensada para a Copa do Mundo, mas construída para rodar qualquer campeonato. Pronta para a próxima competição.</span><span class="en">A pick'em platform designed for the World Cup but built to run any competition. Ready for the next one.</span></p>
         <ul class="feats">
-          <li><strong>Várias competições</strong> na mesma plataforma, com histórico das anteriores e seletor de campeonato.</li>
-          <li><strong>Motor de pontuação configurável:</strong> placar exato, saldo, vencedor, bônus de pênaltis e multiplicador para o mata-mata.</li>
-          <li><strong>Ligas e ranking</strong>, comparação de palpites entre usuários, modo espião e análise de desempenho individual.</li>
-          <li><strong>Portal administrativo</strong> para jogos, placares, times, usuários, regras e estatísticas.</li>
+          <li><span class="pt"><strong>Várias competições</strong> na mesma plataforma, com histórico das anteriores e seletor de campeonato.</span><span class="en"><strong>Multiple competitions</strong> on the same platform, with the history of past ones and a competition selector.</span></li>
+          <li><span class="pt"><strong>Motor de pontuação configurável:</strong> placar exato, saldo, vencedor, bônus de pênaltis e multiplicador para o mata-mata.</span><span class="en"><strong>Configurable scoring engine:</strong> exact score, margin, winner, penalty bonus and a knockout-stage multiplier.</span></li>
+          <li><span class="pt"><strong>Ligas e ranking</strong>, comparação de palpites entre usuários, modo espião e análise de desempenho individual.</span><span class="en"><strong>Leagues and ranking</strong>, pick comparison between users, spy mode and individual performance analysis.</span></li>
+          <li><span class="pt"><strong>Portal administrativo</strong> para jogos, placares, times, usuários, regras e estatísticas.</span><span class="en"><strong>Admin portal</strong> for matches, scores, teams, users, rules and statistics.</span></li>
         </ul>
         <div class="deep">
-          <p class="mono label">Destaque técnico</p>
-          <p>Sincronização automática de resultados via API-Football, com normalização de nomes de seleções para o português e consulta apenas das datas com jogos ativos, para poupar chamadas da API.</p>
+          <p class="mono label"><span class="pt">Destaque técnico</span><span class="en">Technical highlight</span></p>
+          <p><span class="pt">Sincronização automática de resultados via API-Football, com normalização de nomes de seleções para o português e consulta apenas das datas com jogos ativos, para poupar chamadas da API.</span><span class="en">Automatic result sync via API-Football, with national team names normalized to Portuguese and queries only for dates with active matches, to save API calls.</span></p>
         </div>
         <ul class="stack mono"><li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>Supabase</li><li>API-Football</li><li>Tailwind</li></ul>
-        <div class="links">
-          <a class="btn" data-link="arenapicks-live" href="#" target="_blank" rel="noopener">Ver online ↗</a>
-          <a class="btn ghost" data-link="arenapicks-repo" href="#" target="_blank" rel="noopener">Código no GitHub</a>
-        </div>
       </div>
     </article>
+
+    <!-- ============ YUEFIT ============ -->
+    <article class="project" style="--accent:#a78bfa; --accent-ink:#1a0f3a" id="yuefit">
+      <div class="shot shot-yue" aria-hidden="true">
+        <div class="win">
+          <div class="win-bar"><i></i><i></i><i></i><span class="mono"><span class="pt">carga por semana</span><span class="en">load by week</span></span></div>
+          <div class="bars"><span style="--h:38%"></span><span style="--h:46%"></span><span style="--h:52%"></span><span style="--h:60%"></span><span style="--h:68%"></span><span style="--h:78%"></span></div>
+          <div class="bars-lab"><em>S1</em><em>S2</em><em>S3</em><em>S4</em><em>S5</em><em>S6</em></div>
+        </div>
+      </div>
+      <div class="info">
+        <p class="tag mono"><span class="pt">Projeto 03 · Registro de treinos</span><span class="en">Project 03 · Workout log</span></p>
+        <p class="status mono"><span class="pt">Em produção · em evolução</span><span class="en">In production · evolving</span></p>
+        <h3>YueFit</h3>
+        <p class="pitch"><span class="pt">Guarda as informações de treino para acompanhar a progressão de carga e mostrar quanto a pessoa está evoluindo. Yue significa lua em chinês.</span><span class="en">Stores workout data to track load progression and show how much someone is improving. Yue means moon in Chinese.</span></p>
+        <ul class="feats">
+          <li><span class="pt"><strong>Registro de treinos</strong> com cargas por exercício.</span><span class="en"><strong>Workout logging</strong> with loads per exercise.</span></li>
+          <li><span class="pt"><strong>Evolução ao longo do tempo</strong>, para ver a progressão de carga.</span><span class="en"><strong>Progress over time</strong>, to see load progression.</span></li>
+        </ul>
+        <div class="deep">
+          <p class="mono label"><span class="pt">Próximo passo</span><span class="en">Next step</span></p>
+          <p><span class="pt">Permitir que outras pessoas criem treinos e os distribuam.</span><span class="en">Let other people create workouts and share them.</span></p>
+        </div>
+        <ul class="stack mono"><li>TypeScript</li><li>Supabase</li><li>Vercel</li></ul>
+      </div>
+    </article>
+
+    <!-- ============ POKEDATA ============ -->
+    <article class="project flip" style="--accent:#22d3ee; --accent-ink:#04252b" id="pokedata">
+      <div class="shot shot-poke" aria-hidden="true">
+        <div class="win">
+          <div class="win-bar"><i></i><i></i><i></i><span class="mono">team-builder</span></div>
+          <div class="poke-grid">
+            <div class="slot"><b>HP</b><span style="--w:78%"></span></div>
+            <div class="slot"><b>ATK</b><span style="--w:92%"></span></div>
+            <div class="slot"><b>DEF</b><span style="--w:55%"></span></div>
+            <div class="slot"><b>SPA</b><span style="--w:66%"></span></div>
+            <div class="slot"><b>SPD</b><span style="--w:60%"></span></div>
+            <div class="slot"><b>SPE</b><span style="--w:84%"></span></div>
+          </div>
+          <div class="chips"><em><span class="pt">Fogo</span><span class="en">Fire</span></em><em><span class="pt">Água</span><span class="en">Water</span></em><em><span class="pt">Planta</span><span class="en">Grass</span></em><em><span class="pt">Elétrico</span><span class="en">Electric</span></em><em><span class="pt">Gelo</span><span class="en">Ice</span></em><em><span class="pt">Lutador</span><span class="en">Fighting</span></em></div>
+        </div>
+      </div>
+      <div class="info">
+        <p class="tag mono"><span class="pt">Projeto 04 · Ferramenta para jogadores</span><span class="en">Project 04 · Tool for players</span></p>
+        <p class="status mono"><span class="pt">No ar · uso pessoal</span><span class="en">Live · personal use</span></p>
+        <h3>PokéData</h3>
+        <p class="pitch"><span class="pt">Central de dados para jogadores de Pokémon: monte times, acompanhe sua jornada em cada jogo e organize seus boxes.</span><span class="en">A data hub for Pokémon players: build teams, track your journey in each game and organize your boxes.</span></p>
+        <ul class="feats">
+          <li><span class="pt"><strong>Team Builder</strong> com cálculo de stats finais (EVs, IVs e natureza), análise de defesa e ataque por tipo, recomendações e sorteio de times.</span><span class="en"><strong>Team Builder</strong> with final stat calculation (EVs, IVs and nature), type-based defense and offense analysis, recommendations and random team draws.</span></li>
+          <li><span class="pt"><strong>Playthrough</strong> por jogo: ginásios, rotas, itens, exclusivos e times dos treinadores.</span><span class="en"><strong>Playthrough</strong> per game: gyms, routes, items, exclusives and trainer teams.</span></li>
+          <li><span class="pt"><strong>Home Organizer</strong> que distribui a coleção em boxes de 30, com filtros de shiny, formas e gênero.</span><span class="en"><strong>Home Organizer</strong> that distributes your collection into boxes of 30, with shiny, form and gender filters.</span></li>
+          <li><span class="pt">Roster do <strong>Champions</strong>, enciclopédia de golpes, habilidades e itens, perfil de usuário e painel admin.</span><span class="en"><strong>Champions</strong> roster, move, ability and item encyclopedia, user profile and admin panel.</span></li>
+        </ul>
+        <div class="deep">
+          <p class="mono label"><span class="pt">Destaque técnico</span><span class="en">Technical highlight</span></p>
+          <p><span class="pt">Scripts em Node que raspam a Bulbapedia (cheerio) e sincronizam encontros por rota no Supabase, com mapa de jogos, classificação de locais e tratamento de nomes não mapeados.</span><span class="en">Node scripts that scrape Bulbapedia (cheerio) and sync per-route encounters to Supabase, with a game map, location classification and handling of unmapped names.</span></p>
+        </div>
+        <ul class="stack mono"><li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>Supabase</li><li>PokéAPI</li><li>Cheerio</li><li>Tailwind</li></ul>
+      </div>
+    </article>
+
+    <p class="note"><span class="pt">Os repositórios são privados. Demonstração e passagem pelo código sob pedido.</span><span class="en">The repositories are private. Demos and code walkthroughs on request.</span></p>
+  </section>
+
+  <section id="servicos" class="section">
+    <div class="section-head">
+      <p class="eyebrow mono">02 · <span class="pt">Serviços</span><span class="en">Services</span></p>
+      <h2><span class="pt">No que posso ajudar</span><span class="en">How I can help</span></h2>
+    </div>
+    <div class="cols">
+      <div class="col"><h4><span class="pt">Aplicações web sob medida</span><span class="en">Custom web applications</span></h4><p><span class="pt">Do banco de dados à publicação, com Next.js, React, TypeScript, Supabase e Vercel.</span><span class="en">From database to deployment, with Next.js, React, TypeScript, Supabase and Vercel.</span></p></div>
+      <div class="col"><h4><span class="pt">Banco de dados</span><span class="en">Database work</span></h4><p><span class="pt">Análise e otimização de queries, procedures e relatórios em SQL Server e PostgreSQL.</span><span class="en">Query analysis and tuning, stored procedures and reporting on SQL Server and PostgreSQL.</span></p></div>
+      <div class="col"><h4><span class="pt">Relatórios e dashboards</span><span class="en">Reports and dashboards</span></h4><p><span class="pt">SQL, Power BI e Excel avançado para transformar dados em informação útil.</span><span class="en">SQL, Power BI and advanced Excel to turn raw data into something useful.</span></p></div>
+      <div class="col"><h4><span class="pt">APIs e automações</span><span class="en">APIs and automation</span></h4><p><span class="pt">Integração com APIs externas, scripts, e-mails automáticos e fluxos de entrega automatizados.</span><span class="en">Third-party API integration, scripts, automatic emails and automated delivery workflows.</span></p></div>
+    </div>
   </section>
 
   <section id="stack" class="section">
     <div class="section-head">
-      <p class="eyebrow mono">02 · Stack</p>
-      <h2>O que aparece nos três projetos</h2>
+      <p class="eyebrow mono">03 · Stack</p>
+      <h2><span class="pt">O que eu uso</span><span class="en">What I use</span></h2>
     </div>
     <div class="cols">
-      <div class="col"><h4>Front-end</h4><p>Next.js (App Router), React 19, TypeScript, Tailwind CSS, Lucide, interfaces responsivas com temas dinâmicos.</p></div>
-      <div class="col"><h4>Back-end e dados</h4><p>Supabase (Postgres, autenticação, relacionamentos), rotas de API no Next, rotinas de recálculo e sincronização agendadas.</p></div>
-      <div class="col"><h4>Integrações</h4><p>ESPN, API-Football, PokéAPI e Bulbapedia (scraping), tratando dados inconsistentes e nomes divergentes.</p></div>
-      <div class="col"><h4>Produto</h4><p>Regras de negócio configuráveis, permissões, painéis de administração, ranking e fluxos de ligas entre usuários.</p></div>
+      <div class="col"><h4>Front-end</h4><p><span class="pt">Next.js (App Router), React 19, TypeScript, Tailwind CSS, interfaces responsivas com temas dinâmicos.</span><span class="en">Next.js (App Router), React 19, TypeScript, Tailwind CSS, responsive interfaces with dynamic themes.</span></p></div>
+      <div class="col"><h4><span class="pt">Back-end e dados</span><span class="en">Back end and data</span></h4><p><span class="pt">Supabase (Postgres, autenticação, relacionamentos), rotas de API no Next, rotinas de recálculo e sincronização agendadas, publicação na Vercel.</span><span class="en">Supabase (Postgres, authentication, relations), Next.js API routes, scheduled recalculation and sync jobs, deployed on Vercel.</span></p></div>
+      <div class="col"><h4><span class="pt">Banco de dados e integração</span><span class="en">Databases and integration</span></h4><p><span class="pt">SQL Server (queries, procedures, relatórios, otimização), PostgreSQL, Kafka e ksqlDB, Power BI, Excel avançado. APIs: ESPN, API-Football, PokéAPI e scraping da Bulbapedia.</span><span class="en">SQL Server (queries, procedures, reporting, tuning), PostgreSQL, Kafka and ksqlDB, Power BI, advanced Excel. APIs: ESPN, API-Football, PokéAPI and Bulbapedia scraping.</span></p></div>
+      <div class="col"><h4><span class="pt">Produto e processos</span><span class="en">Product and process</span></h4><p><span class="pt">Regras de negócio configuráveis, permissões, painéis de administração, ranking e fluxos de ligas entre usuários. Modelagem de processos em BPMN.</span><span class="en">Configurable business rules, permissions, admin panels, rankings and user league flows. Process modeling in BPMN.</span></p></div>
     </div>
   </section>
 
   <section id="sobre" class="section about">
     <div class="section-head">
-      <p class="eyebrow mono">03 · Sobre</p>
-      <h2>Quem está por trás</h2>
+      <p class="eyebrow mono">04 · <span class="pt">Sobre</span><span class="en">About</span></p>
+      <h2><span class="pt">Quem está por trás</span><span class="en">Who is behind it</span></h2>
     </div>
-    <p data-bind="about">Sou desenvolvedor e gosto de transformar hobbies em produtos de verdade. Meus projetos nasceram de problemas que eu mesmo tinha: acompanhar meus jogos, organizar bolões com amigos e ter regras claras de pontuação. Cuido de tudo, do modelo de dados à interface, e busco código organizado e telas agradáveis de usar.</p>
+    <p><span class="pt">Trabalho com TI desde 2014: suporte, sistemas corporativos e, hoje, banco de dados. Fora do expediente, gosto de transformar hobbies em produtos de verdade. Meus projetos nasceram de problemas que eu mesmo tinha: acompanhar meus jogos, organizar bolões com amigos, registrar meus treinos e ter regras claras de pontuação. Cuido de tudo, do modelo de dados à interface, e busco código organizado e telas agradáveis de usar. Falo inglês fluentemente.</span><span class="en">I have worked in IT since 2014: support, enterprise systems and, today, databases. Outside work, I like turning hobbies into real products. My projects came from problems I had myself: following my games, organizing pick'em pools with friends, logging my workouts and having clear scoring rules. I handle everything from the data model to the interface, and aim for organized code and screens that are pleasant to use. I speak English fluently.</span></p>
+
+    <ul class="career">
+      <li>
+        <span class="when">2021 – <span class="pt">atual</span><span class="en">present</span></span>
+        <div>
+          <strong><span class="pt">Analista de Sistemas Pleno</span><span class="en">Systems Analyst (mid-level)</span></strong>
+          <span class="sub"><span class="pt">Empresa do setor educacional. Otimização de queries (ganhos de 15% a 50% na maioria dos casos), migração de dados com Kafka e ksqlDB, automação de entrega de scripts de banco via GitHub.</span><span class="en">Education-sector company. Query tuning (15% to 50% gains in most cases), data migration with Kafka and ksqlDB, GitHub-based automation for database script delivery.</span></span>
+        </div>
+      </li>
+      <li>
+        <span class="when">2016 – 2021</span>
+        <div>
+          <strong>Unimed Campo Mourão</strong>
+          <span class="sub"><span class="pt">Analista de Sistemas. Suporte, relatórios em SQL Server, processos BPM, intranet colaborativa e aplicativo de metas de qualidade.</span><span class="en">Systems Analyst. Support, SQL Server reports, BPM processes, collaborative intranet and quality goals app.</span></span>
+        </div>
+      </li>
+      <li>
+        <span class="when">2014 – 2015</span>
+        <div>
+          <strong><span class="pt">Giga+ (antiga Ligue Telecom)</span><span class="en">Giga+ (formerly Ligue Telecom)</span></strong>
+          <span class="sub"><span class="pt">Estágio em suporte técnico a clientes de fibra óptica.</span><span class="en">Internship in technical support for fiber-optic customers.</span></span>
+        </div>
+      </li>
+      <li>
+        <span class="when"><span class="pt">Formação</span><span class="en">Education</span></span>
+        <div>
+          <strong><span class="pt">Análise e Desenvolvimento de Sistemas, Unicesumar (2020)</span><span class="en">Systems Analysis and Development, Unicesumar (2020)</span></strong>
+          <span class="sub"><span class="pt">Pós-graduação em Banco de Dados, Unicesumar (2020 a 2021).</span><span class="en">Postgraduate specialization in Databases, Unicesumar (2020 to 2021).</span></span>
+        </div>
+      </li>
+    </ul>
   </section>
 
   <section id="contato" class="section contact">
-    <p class="eyebrow mono">04 · Contato</p>
-    <h2>Vamos conversar?</h2>
-    <p class="lead">Aberto a oportunidades, freelas e conversas sobre projetos.</p>
+    <p class="eyebrow mono">05 · <span class="pt">Contato</span><span class="en">Contact</span></p>
+    <h2><span class="pt">Vamos conversar?</span><span class="en">Let's talk?</span></h2>
+    <p class="lead"><span class="pt">Aberto a oportunidades, freelas e conversas sobre projetos.</span><span class="en">Open to opportunities, freelance work and project conversations.</span></p>
     <div class="hero-actions">
-      <a class="btn" data-link="email" href="#">Enviar e-mail</a>
-      <a class="btn ghost" data-link="github" href="#" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn ghost" data-link="linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="mailto:luaan12@gmail.com"><span class="pt">Enviar e-mail</span><span class="en">Send email</span></a>
+      <a class="btn ghost" href="https://github.com/luansaurus" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/luan-fonseca-barros-980504122" target="_blank" rel="noopener">LinkedIn</a>
     </div>
+    <p class="email mono">luaan12@gmail.com</p>
   </section>
 </main>
 
 <footer>
-  <span>© <span id="year"></span> <span data-bind="name">Seu Nome</span></span>
-  <a href="#top">Voltar ao topo ↑</a>
+  <span>© <span id="year"></span> Luan Fonseca Barros</span>
+  <a href="#top"><span class="pt">Voltar ao topo ↑</span><span class="en">Back to top ↑</span></a>
 </footer>
 
 <script src="script.js"></script>

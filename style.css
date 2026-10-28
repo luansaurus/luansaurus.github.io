@@ -122,3 +122,30 @@ footer a:hover{color:var(--text)}
   .shot{position:static;min-height:0}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+
+/* ===== additions: language switch, status, YueFit mock, career, misc ===== */
+:root{color-scheme:dark}
+html[data-lang="pt"] .en,html[data-lang="en"] .pt{display:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--brand);outline-offset:3px}
+
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;margin:0 6px}
+.lang button{font:500 12px var(--mono);background:transparent;color:var(--muted);border:0;padding:6px 11px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--text);color:var(--bg)}
+
+.status{font-size:11px;color:var(--accent);letter-spacing:.06em;text-transform:uppercase;margin-top:6px}
+.note{color:var(--muted);font-size:15px;margin-top:8px}
+.email{color:var(--muted);font-size:14px;margin-top:20px;overflow-wrap:anywhere}
+
+/* mock: yuefit */
+.bars{display:flex;align-items:flex-end;gap:10px;height:130px;padding:0 16px}
+.bars span{flex:1;height:var(--h);background:var(--accent);border-radius:6px 6px 0 0;opacity:.9}
+.bars-lab{display:flex;gap:10px;padding:8px 16px 0}
+.bars-lab em{flex:1;text-align:center;font:500 10px var(--mono);font-style:normal;color:var(--muted)}
+
+/* career */
+.about .career{list-style:none;padding:0;margin-top:40px;display:grid;border-top:1px solid var(--line);max-width:none}
+.career li{display:grid;grid-template-columns:10rem minmax(0,1fr);gap:4px 24px;padding:18px 0;border-bottom:1px solid var(--line)}
+.career .when{font:500 13px var(--mono);color:var(--muted);padding-top:3px}
+.career strong{font-weight:600;color:var(--text)}
+.career .sub{display:block;color:var(--muted);font-size:15px}
+@media(max-width:560px){.career li{grid-template-columns:1fr}}
