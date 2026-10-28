@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Luan Fonseca Barros</title>
+<title>Luan Fonseca Barros · Banco de dados e aplicações web</title>
 <meta name="description" content="Banco de dados e aplicações web. Quatro aplicações no ar com Next.js, React, TypeScript e Supabase, mais mais de 10 anos de TI com SQL Server e PostgreSQL. / Databases and web applications: four live apps built with Next.js, React, TypeScript and Supabase, plus 10+ years of IT with SQL Server and PostgreSQL.">
 <meta name="theme-color" content="#0d0f14">
 <script>try{var l=localStorage.getItem("lfb-lang");if(l!=="pt"&&l!=="en"){l=((navigator.language||"pt").toLowerCase().indexOf("pt")===0)?"pt":"en"}document.documentElement.setAttribute("data-lang",l);document.documentElement.setAttribute("lang",l==="pt"?"pt-BR":"en")}catch(e){}</script>
@@ -34,8 +34,8 @@
     <p class="eyebrow mono"><span class="pt">Analista de Sistemas · Banco de dados · Full Stack</span><span class="en">Systems Analyst · Databases · Full Stack</span></p>
     <h1><span class="pt">Eu construo <em>produtos web</em> completos, do banco de dados à interface.</span><span class="en">I build complete <em>web products</em>, from the database to the interface.</span></h1>
     <p class="lead">
-      <span class="pt">Mais de 10 anos em TI, com SQL Server, PostgreSQL e integração de dados no dia a dia. Fora do expediente, quatro aplicações completas no ar com Next.js, React, TypeScript e Supabase.</span>
-      <span class="en">Over 10 years in IT, working daily with SQL Server, PostgreSQL and data integration. Outside work hours, four complete applications live with Next.js, React, TypeScript and Supabase.</span>
+      <span class="pt">Mais de 10 anos em TI, com SQL Server, PostgreSQL e integração de dados no dia a dia. Fora do expediente, quatro aplicações completas no ar com Next.js, React, TypeScript e Supabase. Também estudo Design Digital e User Experience, então cuido da interface junto com o código.</span>
+      <span class="en">Over 10 years in IT, working daily with SQL Server, PostgreSQL and data integration. Outside work hours, four complete applications live with Next.js, React, TypeScript and Supabase. I am also studying Digital Design and User Experience, so I handle the interface along with the code.</span>
     </p>
     <div class="hero-actions">
       <a class="btn" href="#projetos"><span class="pt">Ver projetos</span><span class="en">See projects</span></a>
@@ -56,28 +56,17 @@
 
     <!-- ============ BLITZPICKS ============ -->
     <article class="project" style="--accent:#ef4444; --accent-ink:#2a0707" id="blitzpicks">
-      <div class="shot shot-blitz" aria-hidden="true">
+      <div class="shot" data-gallery>
         <div class="win">
-          <div class="win-bar"><i></i><i></i><i></i><span class="mono">week 9 · picks</span></div>
-          <div class="game">
-            <div class="tm"><b>KC</b><span>24</span></div>
-            <div class="vs mono">FINAL</div>
-            <div class="tm"><b>BUF</b><span>21</span></div>
-            <div class="pick g">+7</div>
-          </div>
-          <div class="game">
-            <div class="tm"><b>PHI</b><span>17</span></div>
-            <div class="vs mono">3Q · 04:12</div>
-            <div class="tm"><b>DAL</b><span>10</span></div>
-            <div class="pick b">+5</div>
-          </div>
-          <div class="game">
-            <div class="tm"><b>SF</b><span>13</span></div>
-            <div class="vs mono">FINAL</div>
-            <div class="tm"><b>SEA</b><span>20</span></div>
-            <div class="pick r">0</div>
-          </div>
+          <div class="win-bar"><i></i><i></i><i></i><span class="mono shot-label">locker</span></div>
+          <button type="button" class="shot-open" aria-label="Ampliar imagem"><img class="shot-main" src="img/blitzpicks-locker.webp" alt="Locker: seu time, pontuação, posição no ranking e o próximo jogo." loading="lazy" decoding="async"></button>
         </div>
+        <p class="shot-cap">Locker: seu time, pontuação, posição no ranking e o próximo jogo.</p>
+        <ul class="thumbs">
+          <li><button type="button" class="thumb is-on" aria-pressed="true" data-full="img/blitzpicks-locker.webp" data-label="locker" data-pt="Locker: seu time, pontuação, posição no ranking e o próximo jogo." data-en="Locker: your team, points, league rank and next kickoff."><img src="img/blitzpicks-locker-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/blitzpicks-bracket.webp" data-label="bracket" data-pt="Chaveamento dos playoffs até o Super Bowl LXI." data-en="Playoff bracket on the road to Super Bowl LXI."><img src="img/blitzpicks-bracket-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/blitzpicks-ranking.webp" data-label="ranking" data-pt="Ranking global com critérios de desempate e botão Spy para comparar palpites." data-en="Global ranking with tiebreakers and a Spy button to compare picks."><img src="img/blitzpicks-ranking-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
+        </ul>
       </div>
       <div class="info">
         <p class="tag mono"><span class="pt">Projeto 01 · Pick'em da NFL</span><span class="en">Project 01 · NFL pick'em</span></p>
@@ -101,18 +90,17 @@
 
     <!-- ============ ARENAPICKS ============ -->
     <article class="project flip" style="--accent:#3b82f6; --accent-ink:#06142b" id="arenapicks">
-      <div class="shot shot-arena" aria-hidden="true">
+      <div class="shot" data-gallery>
         <div class="win">
-          <div class="win-bar"><i></i><i></i><i></i><span class="mono">ranking</span></div>
-          <ol class="rank">
-            <li><span>1</span><b>Ana</b><em>86 pts</em></li>
-            <li><span>2</span><b>Bruno</b><em>81 pts</em></li>
-            <li><span>3</span><b>Carla</b><em>77 pts</em></li>
-            <li class="me"><span>4</span><b><span class="pt">Você</span><span class="en">You</span></b><em>70 pts</em></li>
-            <li><span>5</span><b>Diego</b><em>64 pts</em></li>
-          </ol>
-          <div class="legend mono"><i class="g"></i><span class="pt">exato</span><span class="en">exact</span> <i class="bl"></i><span class="pt">saldo</span><span class="en">margin</span> <i class="y"></i><span class="pt">vencedor</span><span class="en">winner</span></div>
+          <div class="win-bar"><i></i><i></i><i></i><span class="mono shot-label">dashboard</span></div>
+          <button type="button" class="shot-open" aria-label="Ampliar imagem"><img class="shot-main" src="img/arenapicks-dashboard.webp" alt="Dashboard com jogos do dia, navegação por datas e fases e desempenho do usuário." loading="lazy" decoding="async"></button>
         </div>
+        <p class="shot-cap">Dashboard com jogos do dia, navegação por datas e fases e desempenho do usuário.</p>
+        <ul class="thumbs">
+          <li><button type="button" class="thumb is-on" aria-pressed="true" data-full="img/arenapicks-dashboard.webp" data-label="dashboard" data-pt="Dashboard com jogos do dia, navegação por datas e fases e desempenho do usuário." data-en="Dashboard with today&#x27;s games, date and phase navigation and user performance."><img src="img/arenapicks-dashboard-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/arenapicks-ranking.webp" data-label="ranking" data-pt="Ranking oficial da liga, com opção de espiar os palpites." data-en="Official league ranking, with an option to spy on picks."><img src="img/arenapicks-ranking-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/arenapicks-admin.webp" data-label="admin" data-pt="Painel administrativo: placares, jogos e configurações, com sincronização via API." data-en="Admin panel: scores, matches and settings, with API sync."><img src="img/arenapicks-admin-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
+        </ul>
       </div>
       <div class="info">
         <p class="tag mono"><span class="pt">Projeto 02 · Bolão multicampeonato</span><span class="en">Project 02 · Multi-competition pick'em</span></p>
@@ -135,12 +123,17 @@
 
     <!-- ============ YUEFIT ============ -->
     <article class="project" style="--accent:#a78bfa; --accent-ink:#1a0f3a" id="yuefit">
-      <div class="shot shot-yue" aria-hidden="true">
+      <div class="shot" data-gallery>
         <div class="win">
-          <div class="win-bar"><i></i><i></i><i></i><span class="mono"><span class="pt">carga por semana</span><span class="en">load by week</span></span></div>
-          <div class="bars"><span style="--h:38%"></span><span style="--h:46%"></span><span style="--h:52%"></span><span style="--h:60%"></span><span style="--h:68%"></span><span style="--h:78%"></span></div>
-          <div class="bars-lab"><em>S1</em><em>S2</em><em>S3</em><em>S4</em><em>S5</em><em>S6</em></div>
+          <div class="win-bar"><i></i><i></i><i></i><span class="mono shot-label">início</span></div>
+          <button type="button" class="shot-open" aria-label="Ampliar imagem"><img class="shot-main" src="img/yuefit-inicio.webp" alt="Início: ficha ativa do período e atalho para iniciar o treino." loading="lazy" decoding="async"></button>
         </div>
+        <p class="shot-cap">Início: ficha ativa do período e atalho para iniciar o treino.</p>
+        <ul class="thumbs">
+          <li><button type="button" class="thumb is-on" aria-pressed="true" data-full="img/yuefit-inicio.webp" data-label="início" data-pt="Início: ficha ativa do período e atalho para iniciar o treino." data-en="Home: the active plan for the period and a shortcut to start the workout."><img src="img/yuefit-inicio-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/yuefit-treino.webp" data-label="iniciar treino" data-pt="Treino recomendado para o dia, com exercícios e técnicas como pirâmide e drop set." data-en="Recommended workout for the day, with exercises and techniques such as pyramid and drop sets."><img src="img/yuefit-treino-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/yuefit-historico.webp" data-label="histórico" data-pt="Histórico de treinos com carga e repetições de cada série, com as séries da dupla ao lado." data-en="Workout history with load and reps for each set, with the training partner&#x27;s sets alongside."><img src="img/yuefit-historico-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
+        </ul>
       </div>
       <div class="info">
         <p class="tag mono"><span class="pt">Projeto 03 · Registro de treinos</span><span class="en">Project 03 · Workout log</span></p>
@@ -148,8 +141,10 @@
         <h3>YueFit</h3>
         <p class="pitch"><span class="pt">Guarda as informações de treino para acompanhar a progressão de carga e mostrar quanto a pessoa está evoluindo. Yue significa lua em chinês.</span><span class="en">Stores workout data to track load progression and show how much someone is improving. Yue means moon in Chinese.</span></p>
         <ul class="feats">
-          <li><span class="pt"><strong>Registro de treinos</strong> com cargas por exercício.</span><span class="en"><strong>Workout logging</strong> with loads per exercise.</span></li>
-          <li><span class="pt"><strong>Evolução ao longo do tempo</strong>, para ver a progressão de carga.</span><span class="en"><strong>Progress over time</strong>, to see load progression.</span></li>
+          <li><span class="pt"><strong>Fichas por período</strong> com treinos A, B e outros, e técnicas como pirâmide e drop set.</span><span class="en"><strong>Plans by period</strong> with workouts A, B and more, and techniques such as pyramid and drop sets.</span></li>
+          <li><span class="pt"><strong>Registro de cada treino</strong> com carga e repetições por série, e histórico para acompanhar a progressão.</span><span class="en"><strong>Logging of every workout</strong> with load and reps per set, and a history to follow progression.</span></li>
+          <li><span class="pt"><strong>Modo dupla:</strong> fichas sincronizadas com um parceiro de treino.</span><span class="en"><strong>Partner mode:</strong> plans synced with a training partner.</span></li>
+          <li><span class="pt"><strong>Perfil</strong> com peso atual e evolução física ao longo do tempo.</span><span class="en"><strong>Profile</strong> with current weight and physical progress over time.</span></li>
         </ul>
         <div class="deep">
           <p class="mono label"><span class="pt">Próximo passo</span><span class="en">Next step</span></p>
@@ -161,19 +156,18 @@
 
     <!-- ============ POKEDATA ============ -->
     <article class="project flip" style="--accent:#22d3ee; --accent-ink:#04252b" id="pokedata">
-      <div class="shot shot-poke" aria-hidden="true">
+      <div class="shot" data-gallery>
         <div class="win">
-          <div class="win-bar"><i></i><i></i><i></i><span class="mono">team-builder</span></div>
-          <div class="poke-grid">
-            <div class="slot"><b>HP</b><span style="--w:78%"></span></div>
-            <div class="slot"><b>ATK</b><span style="--w:92%"></span></div>
-            <div class="slot"><b>DEF</b><span style="--w:55%"></span></div>
-            <div class="slot"><b>SPA</b><span style="--w:66%"></span></div>
-            <div class="slot"><b>SPD</b><span style="--w:60%"></span></div>
-            <div class="slot"><b>SPE</b><span style="--w:84%"></span></div>
-          </div>
-          <div class="chips"><em><span class="pt">Fogo</span><span class="en">Fire</span></em><em><span class="pt">Água</span><span class="en">Water</span></em><em><span class="pt">Planta</span><span class="en">Grass</span></em><em><span class="pt">Elétrico</span><span class="en">Electric</span></em><em><span class="pt">Gelo</span><span class="en">Ice</span></em><em><span class="pt">Lutador</span><span class="en">Fighting</span></em></div>
+          <div class="win-bar"><i></i><i></i><i></i><span class="mono shot-label">team-builder</span></div>
+          <button type="button" class="shot-open" aria-label="Ampliar imagem"><img class="shot-main" src="img/pokedata-times.webp" alt="Team builder com painel tático de stats, defesa, ataque e dicas, e sorteio de equipe." loading="lazy" decoding="async"></button>
         </div>
+        <p class="shot-cap">Team builder com painel tático de stats, defesa, ataque e dicas, e sorteio de equipe.</p>
+        <ul class="thumbs">
+          <li><button type="button" class="thumb is-on" aria-pressed="true" data-full="img/pokedata-times.webp" data-label="team-builder" data-pt="Team builder com painel tático de stats, defesa, ataque e dicas, e sorteio de equipe." data-en="Team builder with a tactical panel for stats, defense, offense and tips, plus a random team draw."><img src="img/pokedata-times-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/pokedata-caixas.webp" data-label="caixas" data-pt="Caixas de organização por jogo, com progresso de registro e modo só shiny." data-en="Per-game organizer boxes with registration progress and a shiny-only mode."><img src="img/pokedata-caixas-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/pokedata-pokedex.webp" data-label="pokédex" data-pt="Pokédex Explorer: catálogo de espécies e formas, com busca e filtros por geração e tipo." data-en="Pokédex Explorer: a catalog of species and forms, with search and filters by generation and type."><img src="img/pokedata-pokedex-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/pokedata-painel.webp" data-label="painel" data-pt="Painel com busca de espécie, último jogo acessado e atalhos para as equipes." data-en="Dashboard with species search, last game accessed and shortcuts to teams."><img src="img/pokedata-painel-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
+        </ul>
       </div>
       <div class="info">
         <p class="tag mono"><span class="pt">Projeto 04 · Ferramenta para jogadores</span><span class="en">Project 04 · Tool for players</span></p>
@@ -204,6 +198,7 @@
     </div>
     <div class="cols">
       <div class="col"><h4><span class="pt">Aplicações web sob medida</span><span class="en">Custom web applications</span></h4><p><span class="pt">Do banco de dados à publicação, com Next.js, React, TypeScript, Supabase e Vercel.</span><span class="en">From database to deployment, with Next.js, React, TypeScript, Supabase and Vercel.</span></p></div>
+      <div class="col"><h4><span class="pt">Interface e UX para web</span><span class="en">Interface and UX for the web</span></h4><p><span class="pt">Fluxos claros, interfaces responsivas e temas que se adaptam ao usuário, aplicados nos meus projetos. Cursando Design Digital e User Experience.</span><span class="en">Clear flows, responsive interfaces and themes that adapt to the user, applied in my projects. Studying Digital Design and User Experience.</span></p></div>
       <div class="col"><h4><span class="pt">Banco de dados</span><span class="en">Database work</span></h4><p><span class="pt">Análise e otimização de queries, procedures e relatórios em SQL Server e PostgreSQL.</span><span class="en">Query analysis and tuning, stored procedures and reporting on SQL Server and PostgreSQL.</span></p></div>
       <div class="col"><h4><span class="pt">Relatórios e dashboards</span><span class="en">Reports and dashboards</span></h4><p><span class="pt">SQL, Power BI e Excel avançado para transformar dados em informação útil.</span><span class="en">SQL, Power BI and advanced Excel to turn raw data into something useful.</span></p></div>
       <div class="col"><h4><span class="pt">APIs e automações</span><span class="en">APIs and automation</span></h4><p><span class="pt">Integração com APIs externas, scripts, e-mails automáticos e fluxos de entrega automatizados.</span><span class="en">Third-party API integration, scripts, automatic emails and automated delivery workflows.</span></p></div>
@@ -257,6 +252,7 @@
         <div>
           <strong><span class="pt">Análise e Desenvolvimento de Sistemas, Unicesumar (2020)</span><span class="en">Systems Analysis and Development, Unicesumar (2020)</span></strong>
           <span class="sub"><span class="pt">Pós-graduação em Banco de Dados, Unicesumar (2020 a 2021).</span><span class="en">Postgraduate specialization in Databases, Unicesumar (2020 to 2021).</span></span>
+          <span class="sub"><span class="pt">Cursando graduação em Design Digital e User Experience, Uniasselvi. Conclusão prevista no 1º semestre de 2027.</span><span class="en">Currently pursuing an undergraduate degree in Digital Design and User Experience at Uniasselvi, expected to finish in the first half of 2027.</span></span>
         </div>
       </li>
     </ul>
@@ -279,6 +275,14 @@
   <span>© <span id="year"></span> Luan Fonseca Barros</span>
   <a href="#top"><span class="pt">Voltar ao topo ↑</span><span class="en">Back to top ↑</span></a>
 </footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Imagem ampliada">
+  <figure>
+    <img id="lightbox-img" alt="">
+    <figcaption id="lightbox-cap"></figcaption>
+  </figure>
+  <form method="dialog"><button type="submit" class="btn ghost"><span class="pt">Fechar</span><span class="en">Close</span></button></form>
+</dialog>
 
 <script src="script.js"></script>
 </body>
