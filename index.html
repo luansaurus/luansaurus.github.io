@@ -5,17 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Luan Fonseca Barros · Banco de dados e aplicações web</title>
 <meta name="description" content="Banco de dados e aplicações web. Quatro aplicações no ar com Next.js, React, TypeScript e Supabase, mais mais de 10 anos de TI com SQL Server e PostgreSQL. / Databases and web applications: four live apps built with Next.js, React, TypeScript and Supabase, plus 10+ years of IT with SQL Server and PostgreSQL.">
-<meta name="theme-color" content="#0d0f14">
+<meta name="theme-color" content="#030407">
 <script>try{var l=localStorage.getItem("lfb-lang");if(l!=="pt"&&l!=="en"){l=((navigator.language||"pt").toLowerCase().indexOf("pt")===0)?"pt":"en"}document.documentElement.setAttribute("data-lang",l);document.documentElement.setAttribute("lang",l==="pt"?"pt-BR":"en")}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<style>html[data-lang="pt"] .en,html[data-lang="en"] .pt{display:none}</style>
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="bg" aria-hidden="true"><i class="orb o1"></i><i class="orb o2"></i></div>
+<div class="glow" id="glow" aria-hidden="true"></div>
 
 <header class="nav" id="top">
-  <a class="brand" href="#top">LFB</a>
+  <a class="brand" href="#top">LFB<b>.</b></a>
   <nav>
     <a href="#projetos"><span class="pt">Projetos</span><span class="en">Projects</span></a>
     <a href="#servicos"><span class="pt">Serviços</span><span class="en">Services</span></a>
@@ -31,6 +35,7 @@
 
 <main>
   <section class="hero">
+    <svg class="bolt" viewBox="0 0 120 200" aria-hidden="true" focusable="false"><polyline points="78,4 24,104 62,104 38,196 98,78 62,78 92,4 78,4"/></svg>
     <p class="eyebrow mono"><span class="pt">Analista de Sistemas · Banco de dados · Full Stack</span><span class="en">Systems Analyst · Databases · Full Stack</span></p>
     <h1><span class="pt">Eu construo <em>produtos web</em> completos, do banco de dados à interface.</span><span class="en">I build complete <em>web products</em>, from the database to the interface.</span></h1>
     <p class="lead">
@@ -42,11 +47,14 @@
       <a class="btn ghost" href="#contato"><span class="pt">Falar comigo</span><span class="en">Get in touch</span></a>
     </div>
     <dl class="numbers">
-      <div><dt>4</dt><dd><span class="pt">aplicações no ar</span><span class="en">live applications</span></dd></div>
-      <div><dt>10+</dt><dd><span class="pt">anos em TI</span><span class="en">years in IT</span></dd></div>
-      <div><dt>3</dt><dd><span class="pt">APIs externas integradas</span><span class="en">external APIs integrated</span></dd></div>
+      <div><dt><span data-count="4">4</span></dt><dd><span class="pt">aplicações no ar</span><span class="en">live applications</span></dd></div>
+      <div><dt><span data-count="10">10</span>+</dt><dd><span class="pt">anos em TI</span><span class="en">years in IT</span></dd></div>
+      <div><dt><span data-count="3">3</span></dt><dd><span class="pt">APIs externas integradas</span><span class="en">external APIs integrated</span></dd></div>
+      <div><dt>15–50%</dt><dd><span class="pt">ganho de desempenho em queries, na maioria dos casos</span><span class="en">query performance gains in most cases</span></dd></div>
     </dl>
   </section>
+
+  <div class="marquee" aria-hidden="true"><div class="track"><span>Next.js</span><span>React</span><span>TypeScript</span><span>Supabase</span><span>PostgreSQL</span><span>SQL Server</span><span>Kafka</span><span>ksqlDB</span><span>Python</span><span>CI/CD</span><span>GitHub</span><span>Tailwind</span><span>Vercel</span><span>Power BI</span><span>BPMN</span><span>Next.js</span><span>React</span><span>TypeScript</span><span>Supabase</span><span>PostgreSQL</span><span>SQL Server</span><span>Kafka</span><span>ksqlDB</span><span>Python</span><span>CI/CD</span><span>GitHub</span><span>Tailwind</span><span>Vercel</span><span>Power BI</span><span>BPMN</span></div></div>
 
   <section id="projetos" class="section">
     <div class="section-head">
@@ -55,7 +63,7 @@
     </div>
 
     <!-- ============ BLITZPICKS ============ -->
-    <article class="project" style="--accent:#ef4444; --accent-ink:#2a0707" id="blitzpicks">
+    <article class="project" style="--accent:#d4ff24; --accent-ink:#0b1000" id="blitzpicks">
       <div class="shot" data-gallery>
         <div class="win">
           <div class="win-bar"><i></i><i></i><i></i><span class="mono shot-label">locker</span></div>
@@ -63,9 +71,9 @@
         </div>
         <p class="shot-cap">Locker: seu time, pontuação, posição no ranking e o próximo jogo.</p>
         <ul class="thumbs">
-          <li><button type="button" class="thumb is-on" aria-pressed="true" data-full="img/blitzpicks-locker.webp" data-label="locker" data-pt="Locker: seu time, pontuação, posição no ranking e o próximo jogo." data-en="Locker: your team, points, league rank and next kickoff."><img src="img/blitzpicks-locker-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
-          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/blitzpicks-bracket.webp" data-label="bracket" data-pt="Chaveamento dos playoffs até o Super Bowl LXI." data-en="Playoff bracket on the road to Super Bowl LXI."><img src="img/blitzpicks-bracket-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
-          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/blitzpicks-ranking.webp" data-label="ranking" data-pt="Ranking global com critérios de desempate e botão Spy para comparar palpites." data-en="Global ranking with tiebreakers and a Spy button to compare picks."><img src="img/blitzpicks-ranking-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb is-on" aria-pressed="true" data-full="img/blitzpicks-locker.webp" data-label="locker" data-pt="Locker: seu time, pontuação, posição no ranking e o próximo jogo." data-en="Locker: your team, points, league rank and next kickoff."><img src="img/blitzpicks-locker.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/blitzpicks-bracket.webp" data-label="bracket" data-pt="Chaveamento dos playoffs até o Super Bowl LXI." data-en="Playoff bracket on the road to Super Bowl LXI."><img src="img/blitzpicks-bracket.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/blitzpicks-ranking.webp" data-label="ranking" data-pt="Ranking global com critérios de desempate e botão Spy para comparar palpites." data-en="Global ranking with tiebreakers and a Spy button to compare picks."><img src="img/blitzpicks-ranking.webp" alt="" loading="lazy" decoding="async"></button></li>
         </ul>
       </div>
       <div class="info">
@@ -89,7 +97,7 @@
     </article>
 
     <!-- ============ ARENAPICKS ============ -->
-    <article class="project flip" style="--accent:#3b82f6; --accent-ink:#06142b" id="arenapicks">
+    <article class="project flip" style="--accent:#4b86ff; --accent-ink:#020a1f" id="arenapicks">
       <div class="shot" data-gallery>
         <div class="win">
           <div class="win-bar"><i></i><i></i><i></i><span class="mono shot-label">dashboard</span></div>
@@ -97,9 +105,9 @@
         </div>
         <p class="shot-cap">Dashboard com jogos do dia, navegação por datas e fases e desempenho do usuário.</p>
         <ul class="thumbs">
-          <li><button type="button" class="thumb is-on" aria-pressed="true" data-full="img/arenapicks-dashboard.webp" data-label="dashboard" data-pt="Dashboard com jogos do dia, navegação por datas e fases e desempenho do usuário." data-en="Dashboard with today&#x27;s games, date and phase navigation and user performance."><img src="img/arenapicks-dashboard-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
-          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/arenapicks-ranking.webp" data-label="ranking" data-pt="Ranking oficial da liga, com opção de espiar os palpites." data-en="Official league ranking, with an option to spy on picks."><img src="img/arenapicks-ranking-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
-          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/arenapicks-admin.webp" data-label="admin" data-pt="Painel administrativo: placares, jogos e configurações, com sincronização via API." data-en="Admin panel: scores, matches and settings, with API sync."><img src="img/arenapicks-admin-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb is-on" aria-pressed="true" data-full="img/arenapicks-dashboard.webp" data-label="dashboard" data-pt="Dashboard com jogos do dia, navegação por datas e fases e desempenho do usuário." data-en="Dashboard with today&#x27;s games, date and phase navigation and user performance."><img src="img/arenapicks-dashboard.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/arenapicks-ranking.webp" data-label="ranking" data-pt="Ranking oficial da liga, com opção de espiar os palpites." data-en="Official league ranking, with an option to spy on picks."><img src="img/arenapicks-ranking.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/arenapicks-admin.webp" data-label="admin" data-pt="Painel administrativo: placares, jogos e configurações, com sincronização via API." data-en="Admin panel: scores, matches and settings, with API sync."><img src="img/arenapicks-admin.webp" alt="" loading="lazy" decoding="async"></button></li>
         </ul>
       </div>
       <div class="info">
@@ -122,7 +130,7 @@
     </article>
 
     <!-- ============ YUEFIT ============ -->
-    <article class="project" style="--accent:#a78bfa; --accent-ink:#1a0f3a" id="yuefit">
+    <article class="project" style="--accent:#d4ff24; --accent-ink:#0b1000" id="yuefit">
       <div class="shot" data-gallery>
         <div class="win">
           <div class="win-bar"><i></i><i></i><i></i><span class="mono shot-label">início</span></div>
@@ -130,9 +138,9 @@
         </div>
         <p class="shot-cap">Início: ficha ativa do período e atalho para iniciar o treino.</p>
         <ul class="thumbs">
-          <li><button type="button" class="thumb is-on" aria-pressed="true" data-full="img/yuefit-inicio.webp" data-label="início" data-pt="Início: ficha ativa do período e atalho para iniciar o treino." data-en="Home: the active plan for the period and a shortcut to start the workout."><img src="img/yuefit-inicio-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
-          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/yuefit-treino.webp" data-label="iniciar treino" data-pt="Treino recomendado para o dia, com exercícios e técnicas como pirâmide e drop set." data-en="Recommended workout for the day, with exercises and techniques such as pyramid and drop sets."><img src="img/yuefit-treino-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
-          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/yuefit-historico.webp" data-label="histórico" data-pt="Histórico de treinos com carga e repetições de cada série, com as séries da dupla ao lado." data-en="Workout history with load and reps for each set, with the training partner&#x27;s sets alongside."><img src="img/yuefit-historico-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb is-on" aria-pressed="true" data-full="img/yuefit-inicio.webp" data-label="início" data-pt="Início: ficha ativa do período e atalho para iniciar o treino." data-en="Home: the active plan for the period and a shortcut to start the workout."><img src="img/yuefit-inicio.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/yuefit-treino.webp" data-label="iniciar treino" data-pt="Treino recomendado para o dia, com exercícios e técnicas como pirâmide e drop set." data-en="Recommended workout for the day, with exercises and techniques such as pyramid and drop sets."><img src="img/yuefit-treino.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/yuefit-historico.webp" data-label="histórico" data-pt="Histórico de treinos com carga e repetições de cada série, com as séries da dupla ao lado." data-en="Workout history with load and reps for each set, with the training partner&#x27;s sets alongside."><img src="img/yuefit-historico.webp" alt="" loading="lazy" decoding="async"></button></li>
         </ul>
       </div>
       <div class="info">
@@ -155,7 +163,7 @@
     </article>
 
     <!-- ============ POKEDATA ============ -->
-    <article class="project flip" style="--accent:#22d3ee; --accent-ink:#04252b" id="pokedata">
+    <article class="project flip" style="--accent:#4b86ff; --accent-ink:#020a1f" id="pokedata">
       <div class="shot" data-gallery>
         <div class="win">
           <div class="win-bar"><i></i><i></i><i></i><span class="mono shot-label">team-builder</span></div>
@@ -163,10 +171,10 @@
         </div>
         <p class="shot-cap">Team builder com painel tático de stats, defesa, ataque e dicas, e sorteio de equipe.</p>
         <ul class="thumbs">
-          <li><button type="button" class="thumb is-on" aria-pressed="true" data-full="img/pokedata-times.webp" data-label="team-builder" data-pt="Team builder com painel tático de stats, defesa, ataque e dicas, e sorteio de equipe." data-en="Team builder with a tactical panel for stats, defense, offense and tips, plus a random team draw."><img src="img/pokedata-times-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
-          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/pokedata-caixas.webp" data-label="caixas" data-pt="Caixas de organização por jogo, com progresso de registro e modo só shiny." data-en="Per-game organizer boxes with registration progress and a shiny-only mode."><img src="img/pokedata-caixas-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
-          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/pokedata-pokedex.webp" data-label="pokédex" data-pt="Pokédex Explorer: catálogo de espécies e formas, com busca e filtros por geração e tipo." data-en="Pokédex Explorer: a catalog of species and forms, with search and filters by generation and type."><img src="img/pokedata-pokedex-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
-          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/pokedata-painel.webp" data-label="painel" data-pt="Painel com busca de espécie, último jogo acessado e atalhos para as equipes." data-en="Dashboard with species search, last game accessed and shortcuts to teams."><img src="img/pokedata-painel-thumb.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb is-on" aria-pressed="true" data-full="img/pokedata-times.webp" data-label="team-builder" data-pt="Team builder com painel tático de stats, defesa, ataque e dicas, e sorteio de equipe." data-en="Team builder with a tactical panel for stats, defense, offense and tips, plus a random team draw."><img src="img/pokedata-times.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/pokedata-caixas.webp" data-label="caixas" data-pt="Caixas de organização por jogo, com progresso de registro e modo só shiny." data-en="Per-game organizer boxes with registration progress and a shiny-only mode."><img src="img/pokedata-caixas.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/pokedata-pokedex.webp" data-label="pokédex" data-pt="Pokédex Explorer: catálogo de espécies e formas, com busca e filtros por geração e tipo." data-en="Pokédex Explorer: a catalog of species and forms, with search and filters by generation and type."><img src="img/pokedata-pokedex.webp" alt="" loading="lazy" decoding="async"></button></li>
+          <li><button type="button" class="thumb" aria-pressed="false" data-full="img/pokedata-painel.webp" data-label="painel" data-pt="Painel com busca de espécie, último jogo acessado e atalhos para as equipes." data-en="Dashboard with species search, last game accessed and shortcuts to teams."><img src="img/pokedata-painel.webp" alt="" loading="lazy" decoding="async"></button></li>
         </ul>
       </div>
       <div class="info">
@@ -201,7 +209,7 @@
       <div class="col"><h4><span class="pt">Interface e UX para web</span><span class="en">Interface and UX for the web</span></h4><p><span class="pt">Fluxos claros, interfaces responsivas e temas que se adaptam ao usuário, aplicados nos meus projetos. Cursando Design Digital e User Experience.</span><span class="en">Clear flows, responsive interfaces and themes that adapt to the user, applied in my projects. Studying Digital Design and User Experience.</span></p></div>
       <div class="col"><h4><span class="pt">Banco de dados</span><span class="en">Database work</span></h4><p><span class="pt">Análise e otimização de queries, procedures e relatórios em SQL Server e PostgreSQL.</span><span class="en">Query analysis and tuning, stored procedures and reporting on SQL Server and PostgreSQL.</span></p></div>
       <div class="col"><h4><span class="pt">Relatórios e dashboards</span><span class="en">Reports and dashboards</span></h4><p><span class="pt">SQL, Power BI e Excel avançado para transformar dados em informação útil.</span><span class="en">SQL, Power BI and advanced Excel to turn raw data into something useful.</span></p></div>
-      <div class="col"><h4><span class="pt">APIs e automações</span><span class="en">APIs and automation</span></h4><p><span class="pt">Integração com APIs externas, scripts, e-mails automáticos e fluxos de entrega automatizados.</span><span class="en">Third-party API integration, scripts, automatic emails and automated delivery workflows.</span></p></div>
+      <div class="col"><h4><span class="pt">APIs e automações</span><span class="en">APIs and automation</span></h4><p><span class="pt">Integração com APIs externas, scripts em Python, e-mails automáticos, CI/CD e fluxos de entrega automatizados.</span><span class="en">Third-party API integration, Python scripts, automatic emails, CI/CD and automated delivery workflows.</span></p></div>
     </div>
   </section>
 
@@ -212,9 +220,10 @@
     </div>
     <div class="cols">
       <div class="col"><h4>Front-end</h4><p><span class="pt">Next.js (App Router), React 19, TypeScript, Tailwind CSS, interfaces responsivas com temas dinâmicos.</span><span class="en">Next.js (App Router), React 19, TypeScript, Tailwind CSS, responsive interfaces with dynamic themes.</span></p></div>
-      <div class="col"><h4><span class="pt">Back-end e dados</span><span class="en">Back end and data</span></h4><p><span class="pt">Supabase (Postgres, autenticação, relacionamentos), rotas de API no Next, rotinas de recálculo e sincronização agendadas, publicação na Vercel.</span><span class="en">Supabase (Postgres, authentication, relations), Next.js API routes, scheduled recalculation and sync jobs, deployed on Vercel.</span></p></div>
-      <div class="col"><h4><span class="pt">Banco de dados e integração</span><span class="en">Databases and integration</span></h4><p><span class="pt">SQL Server (queries, procedures, relatórios, otimização), PostgreSQL, Kafka e ksqlDB, Power BI, Excel avançado. APIs: ESPN, API-Football, PokéAPI e scraping da Bulbapedia.</span><span class="en">SQL Server (queries, procedures, reporting, tuning), PostgreSQL, Kafka and ksqlDB, Power BI, advanced Excel. APIs: ESPN, API-Football, PokéAPI and Bulbapedia scraping.</span></p></div>
-      <div class="col"><h4><span class="pt">Produto e processos</span><span class="en">Product and process</span></h4><p><span class="pt">Regras de negócio configuráveis, permissões, painéis de administração, ranking e fluxos de ligas entre usuários. Modelagem de processos em BPMN.</span><span class="en">Configurable business rules, permissions, admin panels, rankings and user league flows. Process modeling in BPMN.</span></p></div>
+      <div class="col"><h4><span class="pt">Back-end e dados</span><span class="en">Back end and data</span></h4><p><span class="pt">Supabase (Postgres, autenticação, relacionamentos), rotas de API no Next, rotinas de recálculo e sincronização agendadas, publicação na Vercel, CI/CD e automação de releases com GitHub.</span><span class="en">Supabase (Postgres, authentication, relations), Next.js API routes, scheduled recalculation and sync jobs, deployed on Vercel, CI/CD and release automation with GitHub.</span></p></div>
+      <div class="col"><h4><span class="pt">Banco de dados e integração</span><span class="en">Databases and integration</span></h4><p><span class="pt">SQL Server (queries, procedures, relatórios, otimização), PostgreSQL, Kafka e ksqlDB, Power BI, Excel avançado, Python para automação. APIs: ESPN, API-Football, PokéAPI e scraping da Bulbapedia.</span><span class="en">SQL Server (queries, procedures, reporting, tuning), PostgreSQL, Kafka and ksqlDB, Power BI, advanced Excel, Python for automation. APIs: ESPN, API-Football, PokéAPI and Bulbapedia scraping.</span></p></div>
+      <div class="col"><h4><span class="pt">Produto e processos</span><span class="en">Product and process</span></h4><p><span class="pt">Regras de negócio configuráveis, permissões, painéis de administração, ranking e fluxos de ligas entre usuários. Modelagem de processos em BPMN, Scrum e treinamento de usuários.</span><span class="en">Configurable business rules, permissions, admin panels, rankings and user league flows. Process modeling in BPMN, Scrum and user training.</span></p></div>
+      <div class="col"><h4><span class="pt">Também já trabalhei com</span><span class="en">Also worked with</span></h4><p><span class="pt">Java, Angular, MySQL e testes automatizados, além de IA no dia a dia (Claude e Gemini) para apoiar desenvolvimento e projetos.</span><span class="en">Java, Angular, MySQL and automated testing, plus AI tools day to day (Claude and Gemini) to support development and projects.</span></p></div>
     </div>
   </section>
 
@@ -230,14 +239,15 @@
         <span class="when">2021 – <span class="pt">atual</span><span class="en">present</span></span>
         <div>
           <strong><span class="pt">Analista de Sistemas Pleno</span><span class="en">Systems Analyst (mid-level)</span></strong>
-          <span class="sub"><span class="pt">Empresa do setor educacional. Otimização de queries (ganhos de 15% a 50% na maioria dos casos), migração de dados com Kafka e ksqlDB, automação de entrega de scripts de banco via GitHub.</span><span class="en">Education-sector company. Query tuning (15% to 50% gains in most cases), data migration with Kafka and ksqlDB, GitHub-based automation for database script delivery.</span></span>
+          <span class="sub"><span class="pt">Empresa do setor educacional. Otimização de queries em SQL Server (ganhos de 15% a 50% na maioria dos casos), análise de negócios e relatórios para a pesquisa CPA de satisfação dos estudantes (com apoio à área de BI nos dashboards), migração de dados com Kafka e ksqlDB e integração de sistemas contábeis com Totvs.</span><span class="en">Education-sector company. SQL Server query tuning (15% to 50% gains in most cases), business analysis and reports for the CPA student satisfaction survey (supporting the BI team on dashboards), data migration with Kafka and ksqlDB, and accounting systems integration with Totvs.</span></span>
+          <span class="sub"><span class="pt">Automação de entrega de scripts de banco via GitHub, com CI/CD e engenharia de releases no dia a dia, e Python para automação e integração. Administração de plataformas e sistemas de negócio para 100 usuários, treinamento de usuários, Scrum desde 2021 (Scrum Master substituto por cerca de 3 anos) e uso diário de Claude e Gemini.</span><span class="en">GitHub-based database script delivery automation, with CI/CD and release engineering day to day, and Python for automation and integration. Administration of software platforms and business systems for 100 users, user training, Scrum since 2021 (backup Scrum Master for roughly 3 years) and daily use of Claude and Gemini.</span></span>
         </div>
       </li>
       <li>
         <span class="when">2016 – 2021</span>
         <div>
           <strong>Unimed Campo Mourão</strong>
-          <span class="sub"><span class="pt">Analista de Sistemas. Suporte, relatórios em SQL Server, processos BPM, intranet colaborativa e aplicativo de metas de qualidade.</span><span class="en">Systems Analyst. Support, SQL Server reports, BPM processes, collaborative intranet and quality goals app.</span></span>
+          <span class="sub"><span class="pt">Analista de Sistemas. Suporte nível 1 e 2 e apoio a executivos, relatórios em SQL Server, processos BPM em BPMN (Bizagi), intranet colaborativa, aplicativo de metas de qualidade (Qualiex), integração de sistemas contábeis, comunicação com áreas de negócio e planejamento de implantações.</span><span class="en">Systems Analyst. Level 1 and 2 support and support to executives, SQL Server reports, BPM processes in BPMN (Bizagi), collaborative intranet, quality goals app (Qualiex), accounting systems integration, communication with business areas and rollout planning.</span></span>
         </div>
       </li>
       <li>
@@ -284,6 +294,6 @@
   <form method="dialog"><button type="submit" class="btn ghost"><span class="pt">Fechar</span><span class="en">Close</span></button></form>
 </dialog>
 
-<script src="script.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
