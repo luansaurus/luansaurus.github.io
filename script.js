@@ -158,3 +158,12 @@ document.getElementById("year").textContent = new Date().getFullYear();
     io.observe(el);
   });
 })();
+
+/* modal do perfil (bolinha com a foto) */
+(function () {
+  var btn = document.getElementById("avatar");
+  var dlg = document.getElementById("profile");
+  if (!btn || !dlg || typeof dlg.showModal !== "function") return;
+  btn.addEventListener("click", function () { dlg.showModal(); });
+  dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+})();
